@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharmacy Inventory Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Pharmacy Inventory</h1>
+    <div class="form-container">
+      <form id="medicineForm">
+        <div class="form-group">
+          <label for="productName">Product Name</label>
+          <input type="text" id="productName" placeholder="Product Name" required>
+        </div>
+        <div class="form-group">
+          <label for="manufacturer">Manufacturer</label>
+          <input type="text" id="manufacturer" placeholder="Manufacturer" required>
+        </div>
+        <div class="form-group">
+          <label for="expirationDate">Expiration Date</label>
+          <input type="date" id="expirationDate" required>
+        </div>
+        <div class="form-group">
+          <label for="quantity">Quantity</label>
+          <input type="number" id="quantity" placeholder="Quantity" required>
+        </div>
+        <div class="form-group">
+          <label for="prescriptionRequired">Prescription Required</label>
+          <select id="prescriptionRequired" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <button type="submit">Add Medicine</button>
+      </form>
+      <div id="error"></div>
+    </div>
+    <table id="medicineTable">
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Product ID</th>
+          <th>Manufacturer</th>
+          <th>Expiration Date</th>
+          <th>Quantity</th>
+          <th>Prescription</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
+
