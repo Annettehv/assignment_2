@@ -10,7 +10,7 @@ class Medicine {
     }
   }
   
-  // subclass for regular medicines
+  // subclass for regular medicines 
   class RegularMedicine extends Medicine {
     constructor(name, manufacturer, expirationDate, quantity) {
       super(name, manufacturer, expirationDate, quantity);
